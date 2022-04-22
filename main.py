@@ -61,11 +61,9 @@ class PomodoroTimer:
                 time.sleep(1)
                 full_seconds -= 1
             if not self.stopped:
-                p = vlc.MediaPlayer("sounds/alarm.mp3")
-                p.play()
+                self.timerStopped() 
                 self.pomodoros += 1
                 self.pomodoro_counter_label.config(text=f"Pomodoros: {self.pomodoros}")
-                self.running = False
         elif timer_id == 2:
             full_seconds = 60 * 17
             while full_seconds >= 0 and not self.stopped:
@@ -75,9 +73,7 @@ class PomodoroTimer:
                 time.sleep(1)
                 full_seconds -= 1
             if not self.stopped:
-                p = vlc.MediaPlayer("sounds/alarm.mp3")
-                p.play()
-                self.running = False
+                self.timerStopped()
     def start_timer_thread(self):
         if not self.running: 
             t = threading.Thread(target=self.start_timer)
@@ -89,5 +85,9 @@ class PomodoroTimer:
         self.pomodoro_timer_label.config(text="53:00")
         self.break_timer_label.config(text="17:00")
         self.pomodoro_counter_label.config(text="Pomodoros: 0")
+        self.running = False
+    def timerStopped(self):
+        p = vlc.MediaPlayer("sounds/alarm.mp3")
+        p.play()
         self.running = False
 PomodoroTimer()
