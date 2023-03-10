@@ -9,9 +9,8 @@ With the Study-Aid Timer, you can effectively manage your study time and improve
 
 ## Features
 1. User-friendly graphical user interface for easy interaction with the application
-2. Timer customization options to fit your specific needs
-3. Sound timer to alert you when the timer has elapsed
-4. Progress tracking to help you monitor your productivity over time
+2. Sound timer to alert you when the timer has elapsed
+3. Progress tracking to help you monitor your productivity over time
 
 ## Usage
 To use the Study-Aid Timer, follow these steps:
