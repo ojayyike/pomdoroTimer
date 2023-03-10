@@ -16,8 +16,7 @@ With the Study-Aid Timer, you can effectively manage your study time and improve
 ## Usage
 To use the Study-Aid Timer, follow these steps:
 
-1. Download and install the application on your device.
-2. Launch the application and navigate to the timer settings.
-3. Customize the timer settings to fit your specific needs.
-4. Start the timer and focus on your work.
-5. Once the timer has elapsed, the sound timer will alert you that it's time to take a break or move on to your next task.
+1. Clone Github repo
+2. Navigate to root folder and run 'py main.py' to launch application
+3. Start the timer and focus on your work.
+5. Once the timer has elapsed, the sound timer will alert you that it's time to navigate to break tab and start break timer or move on to your next task.
