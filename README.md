@@ -1,4 +1,4 @@
-# pomdoroTimer
+# PomdoroTimer
 Timer to aid in productivity
 
 ## Product Description
